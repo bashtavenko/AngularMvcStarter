@@ -190,8 +190,13 @@
     <Content Include="Global.asax" />
     <Content Include="css\Site.css" />
     <Content Include="gulpfile.js" />
+    <Content Include="js\products\products-controller.js" />
+    <Content Include="js\products\products-service.js" />
+    <Content Include="js\app.js" />
     <Content Include="lib\readme.txt" />
-    <Content Include="Mvc.sitemap" />
+    <Content Include="Mvc.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="bower.json" />
     <Content Include=".bowerrc" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
@@ -217,8 +222,9 @@
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="js\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

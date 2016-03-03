@@ -6,6 +6,8 @@
     <title>AngularMvcStarter-@Html.MvcSiteMap().SiteMapTitle()</title>
     @Styles.Render("~/css")
     @Scripts.Render("~/lib/jquery/dist/jquery.min.js")
+    @Scripts.Render("~/angular")
+    @RenderSection("JavascriptInHead", required: false)
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">

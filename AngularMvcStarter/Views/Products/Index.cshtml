@@ -1,2 +1,31 @@
-﻿
+﻿@section JavascriptInHead
+{
+    @Scripts.Render("~/js/app.js")
+    @Scripts.Render("~/js/products/products-service.js")
+    @Scripts.Render("~/js/products/products-controller.js")
+}
 
+<div ng-app="starterModule" ng-controller="ProductsController">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control" id="productName" ng-model="productName"/>
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="getProducts()">Retrieve</button>
+    </form>
+
+    <p></p>
+
+    <table class="table table-striped" ng-show="products">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Number</th>
+        </tr>
+        <tr ng-repeat="product in products">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.number}}</td>
+        </tr>
+    </table>
+</div>
