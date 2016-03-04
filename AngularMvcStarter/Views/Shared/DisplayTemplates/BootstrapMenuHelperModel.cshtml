@@ -54,11 +54,11 @@
 // I wish SiteMap provider had tag attribute. It is possible to add custom attribute but it will be
 // visible in route.
 // TODO: this is actually not true, custom attributes should be specified in web.config in order to be excluded from route
-if (!string.IsNullOrEmpty(node.ImageUrl))
-{
-    string cssClass = node.ImageUrl.Substring(1);
-        <i class="glyphicon @cssClass"></i>
-}
+    if (!string.IsNullOrEmpty(node.ImageUrl))
+    {
+        string cssClass = node.ImageUrl.Substring(1);
+            <i class="glyphicon @cssClass"></i>
+    }
 }
 
 @functions
